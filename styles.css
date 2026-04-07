@@ -180,3 +180,36 @@ h1, h2, h3 {
   color: var(--gold);
   stroke: var(--gold);
 }
+
+/* ============================================================
+   SHARED: TEXT BLOCK
+   ============================================================ */
+.text-block {
+  max-width: 680px;
+}
+
+.text-block p {
+  color: #555555;
+  margin-bottom: 32px;
+}
+
+/* ============================================================
+   SHARED: PULL QUOTE / ACCENT BAR
+   ============================================================ */
+.pull-quote {
+  border-left: 3px solid var(--gold);
+  padding-left: 24px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.accent-bar {
+  border-left: 3px solid var(--gold);
+  padding-left: 24px;
+}
+
+.accent-bar p { color: #555555; margin: 0; }
