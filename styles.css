@@ -319,6 +319,49 @@ h1, h2, h3 {
 }
 
 /* ============================================================
+   BUTTONS
+   ============================================================ */
+.button-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 12px;
+  font-family: var(--font-stack);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn--outline {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+}
+
+.btn--outline:hover {
+  background: var(--gold);
+  color: var(--white);
+}
+
+.btn--filled {
+  background: var(--gold);
+  color: var(--white);
+  border: 1px solid var(--gold);
+}
+
+.btn--filled:hover {
+  background: #4e4428;
+  border-color: #4e4428;
+}
+
+/* ============================================================
    TWO-COL REVERSED (image left, text right — Block 8)
    No extra desktop CSS needed: the image placeholder comes first
    in the DOM, so CSS Grid places it in column 1 (left) automatically.
