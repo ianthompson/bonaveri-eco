@@ -306,3 +306,21 @@ h1, h2, h3 {
   line-height: 1.65;
   margin: 0;
 }
+
+/* ============================================================
+   BLOCK 10: AWARD CARDS
+   ============================================================ */
+.award-year {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+/* ============================================================
+   TWO-COL REVERSED (image left, text right — Block 8)
+   No extra desktop CSS needed: the image placeholder comes first
+   in the DOM, so CSS Grid places it in column 1 (left) automatically.
+   The responsive block below re-orders it for mobile.
+   ============================================================ */
