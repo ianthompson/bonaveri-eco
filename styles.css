@@ -266,3 +266,43 @@ h1, h2, h3 {
   padding: 24px;
   line-height: 1.5;
 }
+
+/* ============================================================
+   BLOCK 6: RESEARCH CARDS (shared .card used in Block 10 too)
+   ============================================================ */
+.research-intro {
+  color: #555555;
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 32px;
+}
+
+.card-rule {
+  width: 32px;
+  height: 2px;
+  background: var(--gold);
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.card-body {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.65;
+  margin: 0;
+}
