@@ -7,6 +7,7 @@
   --bg-section:    #F8F8F8;
   --text-body:     #333333;
   --text-muted:    #888888;
+  --text-para:     #555555;
   --border:        #E5E5E5;
   --placeholder-bg:#F5F5F5;
   --white:         #FFFFFF;
@@ -141,7 +142,7 @@ h1, h2, h3 {
 
 .hero-body {
   font-size: 17px;
-  color: #555555;
+  color: var(--text-para);
   max-width: 560px;
   margin: 0 auto;
 }
@@ -189,7 +190,7 @@ h1, h2, h3 {
 }
 
 .text-block p {
-  color: #555555;
+  color: var(--text-para);
   margin-bottom: 32px;
 }
 
@@ -212,7 +213,7 @@ h1, h2, h3 {
   padding-left: 24px;
 }
 
-.accent-bar p { color: #555555; margin: 0; }
+.accent-bar p { color: var(--text-para); margin: 0; }
 
 /* ============================================================
    SHARED: SECTION DIVIDER (Blocks 4 & 11)
@@ -242,7 +243,7 @@ h1, h2, h3 {
 }
 
 .two-col-text p {
-  color: #555555;
+  color: var(--text-para);
 }
 
 .two-col-text h2 {
@@ -271,7 +272,7 @@ h1, h2, h3 {
    BLOCK 6: RESEARCH CARDS (shared .card used in Block 10 too)
    ============================================================ */
 .research-intro {
-  color: #555555;
+  color: var(--text-para);
   max-width: 680px;
   margin-bottom: 40px;
 }
@@ -302,7 +303,7 @@ h1, h2, h3 {
 
 .card-body {
   font-size: 14px;
-  color: #555555;
+  color: var(--text-para);
   line-height: 1.65;
   margin: 0;
 }
@@ -376,7 +377,7 @@ h1, h2, h3 {
 .cta-inner { max-width: 600px; margin: 0 auto; }
 
 .cta-body {
-  color: #555555;
+  color: var(--text-para);
   margin-bottom: 36px;
 }
 
