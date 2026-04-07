@@ -397,3 +397,57 @@ h1, h2, h3 {
 .text-block .button-row { margin-top: 36px; }
 
 .two-col--top { align-items: start; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+/* Tablet — ~768px */
+@media (max-width: 900px) {
+  .container { padding: 0 24px; }
+
+  .two-col,
+  .two-col--reversed {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* On mobile the reversed layout (image first in DOM) would show image above text.
+     Force text first, image second on narrow viewports. */
+  .two-col--reversed .image-placeholder { order: 2; }
+  .two-col--reversed .two-col-text      { order: 1; }
+
+  .commitments-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero { padding: 72px 24px; }
+}
+
+/* Mobile — ~600px */
+@media (max-width: 600px) {
+  :root { --section-pad: 56px 20px; }
+
+  .container { padding: 0 20px; }
+
+  .commitments-grid { grid-template-columns: 1fr 1fr; }
+
+  .cards-grid { grid-template-columns: 1fr; }
+
+  .hero-heading { font-size: 28px; }
+
+  .section-divider-heading { font-size: 22px; }
+
+  .site-nav { display: none; }
+
+  .button-row { flex-direction: column; align-items: flex-start; }
+
+  .button-row--centred { align-items: center; }
+
+  .pull-quote { font-size: 16px; }
+}
