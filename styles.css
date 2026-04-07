@@ -50,6 +50,22 @@ body {
 .section--white   { background: var(--white); }
 
 /* ============================================================
+   TOPIC GROUPS — four background areas
+   ============================================================ */
+.topic-group--white  { background: var(--white); }
+.topic-group--light  { background: var(--bg-section); }
+.topic-group--tinted { background: var(--gold-tint); }
+
+/* Sections within a group are transparent, separated by a thin line */
+.topic-group .section {
+  background: transparent;
+  border-bottom: 1px solid var(--border);
+}
+.topic-group .section:last-child {
+  border-bottom: none;
+}
+
+/* ============================================================
    FADE-IN (initial state — JS will trigger transition)
    ============================================================ */
 .fade-in {
@@ -232,8 +248,8 @@ h1, h2, h3 {
   color: var(--gold);
 }
 
-/* On gold-tint background the gold subtext disappears — use muted instead */
-.section--tinted .section-divider-sub {
+/* On gold-tint group the gold subtext disappears — use muted instead */
+.topic-group--tinted .section-divider-sub {
   color: var(--text-muted);
 }
 
