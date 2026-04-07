@@ -381,3 +381,19 @@ h1, h2, h3 {
 }
 
 .button-row--centred { justify-content: center; }
+
+/* ============================================================
+   SHARED: BLOCK HEADING (h2 inside content sections)
+   ============================================================ */
+.block-heading {
+  font-size: clamp(20px, 2.5vw, 26px);
+  font-weight: 500;
+  color: var(--text-body);
+  margin-bottom: 20px;
+}
+
+.text-block p + p { margin-top: 20px; }
+
+.text-block .button-row { margin-top: 36px; }
+
+.two-col--top { align-items: start; }
