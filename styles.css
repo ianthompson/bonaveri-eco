@@ -367,3 +367,17 @@ h1, h2, h3 {
    in the DOM, so CSS Grid places it in column 1 (left) automatically.
    The responsive block below re-orders it for mobile.
    ============================================================ */
+
+/* ============================================================
+   BLOCK 14: CTA
+   ============================================================ */
+.cta { padding: 80px 24px; text-align: center; }
+
+.cta-inner { max-width: 600px; margin: 0 auto; }
+
+.cta-body {
+  color: #555555;
+  margin-bottom: 36px;
+}
+
+.button-row--centred { justify-content: center; }
