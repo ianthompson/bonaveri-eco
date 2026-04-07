@@ -1,0 +1,62 @@
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+  --gold:          #625834;
+  --gold-tint:     #F5F0E6;
+  --bg-section:    #F8F8F8;
+  --text-body:     #333333;
+  --text-muted:    #888888;
+  --border:        #E5E5E5;
+  --placeholder-bg:#F5F5F5;
+  --white:         #FFFFFF;
+  --font-stack:    'Graphik', 'Inter', 'Helvetica Neue', Helvetica, system-ui, sans-serif;
+  --max-width:     1100px;
+  --section-pad:   80px 24px;
+}
+
+/* ============================================================
+   RESET AND BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-stack);
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-body);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   LAYOUT UTILITIES
+   ============================================================ */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section {
+  padding: var(--section-pad);
+}
+
+.section--tinted  { background: var(--gold-tint); }
+.section--light   { background: var(--bg-section); }
+.section--white   { background: var(--white); }
+
+/* ============================================================
+   FADE-IN (initial state — JS will trigger transition)
+   ============================================================ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
